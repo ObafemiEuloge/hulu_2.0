@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-col sm:flex-row m-5 justify-between items-center">
-    <ul class="flex flex-grow justify-evenly max-w-2xl">
+    <ul class="flex flex-grow gap-4 sm:gap-0 justify-evenly max-w-2xl">
       <HeaderItem v-for="(link, i) of links" :title="link.title" :Icon="link.icon" :key="i" />
     </ul>
     <div>
