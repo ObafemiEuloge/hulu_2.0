@@ -1,7 +1,7 @@
 <template>
     <li class="flex flex-col cursor-pointer hover:text-white transition-all duration-500 group">
         <Icon class="h-8 mb-1 group-hover:animate-bounce transition-all duration-500"/>
-        <a href="#" class="uppercase">{{title}}</a>
+        <a href="#" class="uppercase opacity-0 group-hover:opacity-100 transition-all duration-500">{{title}}</a>
     </li>
 </template>
 
