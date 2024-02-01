@@ -1,10 +1,7 @@
-const api_key = process.env.API_KEY;
+const api_key = import.meta.env.API_KEY;
 
 export default {
-  fetchTrending: {
-    title: 'Trending',
-    url: `/trending/all/week?api_key=${api_key}&language=fr-FR`,
-  },
+  fetchTrending: {title: 'Trending', url: `/trending/all/week?api_key=${api_key}&language=fr-FR`,},
   fetchTopRated: { title: 'TopRated', url: `/movie/top_rated?api_key=${api_key}&language=fr-FR`, },
   fetchActionMovies: { title: 'Action Movies', url: `/discover/movie?api_key=${api_key}&language=fr-FR&with_genres=28`, },
   fetchComedyMovies: { title: 'Comedy Movies', url: `/discover/movie?api_key=${api_key}&language=fr-FR&with_genres=35`, },
